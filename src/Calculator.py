@@ -13,6 +13,9 @@ def division(a,b):
     else:
         return 'Divisor can not be zero.'
 
+def square(a):
+    return float(a)**2
+
 class Calculator:
     result = 0
 
@@ -33,4 +36,8 @@ class Calculator:
 
     def divide(self,a,b):
         self.result = division(a,b)
+        return self.result
+
+    def sqr(self,a):
+        self.result = square(a)
         return self.result
