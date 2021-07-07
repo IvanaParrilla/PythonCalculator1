@@ -7,6 +7,12 @@ def subtraction(a,b):
 def multiplication(a,b):
     return float(a) * float(b)
 
+def division(a,b):
+    if float(a) is not float(0):
+        return round(float(b) / float(a),9)
+    else:
+        return 'Divisor can not be zero.'
+
 class Calculator:
     result = 0
 
@@ -23,4 +29,8 @@ class Calculator:
 
     def multiply(self,a,b):
         self.result = multiplication(a,b)
+        return self.result
+
+    def divide(self,a,b):
+        self.result = division(a,b)
         return self.result
